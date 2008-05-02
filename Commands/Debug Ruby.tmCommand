@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/bin/sh
+
+export RUBYLIB="$TM_BUNDLE_SUPPORT/lib/NotSoMate${RUBYLIB:+:$RUBYLIB}"
+export TM_RUBY=$(type -p "${TM_RUBY:-ruby}")
+export TM_RDEBUG=$(type -p "${TM_RDEBUG:-rdebug}")
+
+"${TM_RUBY}" -- "$TM_BUNDLE_SUPPORT/lib/NotSoMate/run_rdebug.rb"
+</string>
+	<key>input</key>
+	<string>document</string>
+	<key>keyEquivalent</key>
+	<string>@d</string>
+	<key>name</key>
+	<string>Debug Ruby</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>uuid</key>
+	<string>BB6661F1-FC92-4A7C-B3BF-7755CC172541</string>
+</dict>
+</plist>

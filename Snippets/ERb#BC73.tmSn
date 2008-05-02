@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;% elsif ${1:condition} -%&gt;
+  $0
+</string>
+	<key>name</key>
+	<string>ERb: elsif</string>
+	<key>scope</key>
+	<string>text.html.ruby</string>
+	<key>tabTrigger</key>
+	<string>elsif</string>
+	<key>uuid</key>
+	<string>D8F87256-6D3F-4740-98F9-1C70B4D0EFEC</string>
+</dict>
+</plist>
